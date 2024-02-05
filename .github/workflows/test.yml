@@ -1,5 +1,5 @@
 yaml
-name: Animal Farm NodeJS CI
+name: Animal Farm NodeJS CIA
 on:
   push:
     branches:
