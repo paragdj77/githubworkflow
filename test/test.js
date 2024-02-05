@@ -10,11 +10,11 @@ describe('GET', function(){
     .expect(200, done);
   })
 
-  it('respond with George Orwell', function(done){
+  it('respond with the Deer', function(done){
     request
     .get('/')
     .set('Accept', 'text/html')
-    .expect(200, /George Orwell had a farm/ig, done);
+    .expect(200, /Deer had a farm/ig, done);
   })
 
   it('/api responds with json', function(done){
