@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "4.x",
-    "underscore": "^1.12.1"
+    "underscore": "^1.12.1",
+    "yarn": "^1.22.21"
   },
   "scripts": {
     "test": "nyc --reporter=html mocha --exit",

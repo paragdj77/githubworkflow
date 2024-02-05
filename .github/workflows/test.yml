@@ -1,18 +1,15 @@
-name: Animal Farm Node.js CI
-
+yaml
+name: Animal Farm NodeJS CI
 on:
   push:
-   branches:
-      - main
+    branches:
+      - random
   pull_request:
     branches:
-      - main
-
+      - random
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -20,7 +17,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '18.x'
-    - name: Run Yarn
+    - name: Run Yarn 
       run: yarn
     - name: Run tests
       run: yarn test
